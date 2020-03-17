@@ -1,22 +1,20 @@
-div {
-	display: flow-root;
+.tittle {
+	display: inherit;
 	align-items: center;
 	justify-content: center;
 	color: red;
 	text-align: center;
-	font-size: 8rem;
+	font-size: 3rem;
 	text-transform: uppercase;
 	font-family: 'Monoton', cursive;
 	word-spacing: 4rem;
 	letter-spacing: 13px;
 	text-shadow: 0 0 80px red, 0 0 30px FireBrick, 0 0 6px DarkRed;
 	position: relative;
-	animation: tittle 5s linear forwards;
-	animation-delay: 8s;
-}
-
-.space {
-	display: flex;
+	animation: tittle 7s linear forwards;
+	animation-delay: 0s;
+	height: 5rem;
+	padding-top: 0.3rem;
 }
 
 .R {
@@ -45,7 +43,7 @@ div span:nth-of-type(3) {
 #hangEdge {
 	display: inline-block;
 	animation: hang 5s linear forwards;
-	/* animation-delay: 10s; */
+	animation-delay: 10s;
 	margin: 0;
 }
 
@@ -187,12 +185,9 @@ div span:nth-of-type(3) {
 
 @keyframes tittle {
 	0% {
+		transform: scale(1.5);
+	}
+	100% {
 		transform: scale(1);
-	}
-	98% {
-		transform: scale(0.7);
-	}
-	99% {
-		transform: translate(0, 1px);
 	}
 }

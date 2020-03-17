@@ -1,0 +1,19 @@
+.logo-container {
+	position: absolute;
+}
+
+.logo {
+	padding: 1rem;
+	padding-left: 4rem;
+	width: 4rem;
+	animation: crescendo 1.5s alternate infinite ease-in;
+}
+
+@keyframes crescendo {
+	0% {
+		transform: scale(0.9);
+	}
+	100% {
+		transform: scale(1.3);
+	}
+}
