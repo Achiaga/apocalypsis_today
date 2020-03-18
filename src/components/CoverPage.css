@@ -1,5 +1,5 @@
 .tittle {
-	display: inherit;
+	display: flex;
 	align-items: center;
 	justify-content: center;
 	/* color: red; */
@@ -16,11 +16,24 @@
 	text-shadow: 0 0 80px rgb(255, 255, 0), 0 0 30px darkgoldenrod,
 		0 0 6px darkgoldenrod;
 	height: 5rem;
-	margin-top: 0.4rem;
+	margin-top: 0.5rem;
 	margin-left: 3rem;
 	position: relative;
+	z-index: -10;
 	/* animation: tittle 5s linear forwards;
 	animation-delay: 0s; */
+}
+
+.tittle > span {
+	position: relative;
+}
+
+.tittle > span:hover {
+	cursor: pointer;
+
+	color: cyan;
+	text-shadow: 0 0 80px cyan, 0 0 30px darkcyan, 0 0 6px darkcyan;
+	animation: bounceLetter 0.9s;
 }
 
 .R {
@@ -37,8 +50,12 @@
 	animation-iteration-count: infinite;
 }
 
-div span:nth-of-type(3) {
+.P {
 	animation: slowBlink 15s linear infinite;
+}
+
+.endLetter {
+	margin-right: 4rem;
 }
 
 .off {
@@ -57,6 +74,30 @@ div span:nth-of-type(3) {
 #hangEdge span {
 	animation: slowBlink 15s linear infinite;
 	animation-delay: 13s;
+}
+#hangEdge > span:hover {
+	cursor: pointer;
+}
+
+@keyframes bounceLetter {
+	0% {
+		transform: scale3d(1, 1, 1);
+	}
+	30% {
+		transform: scale3d(1.25, 0.75, 1);
+	}
+	40% {
+		transform: scale3d(1.15, 0.85, 1);
+	}
+	65% {
+		transform: scale3d(0.95, 1.05, 1);
+	}
+	75% {
+		transform: scale3d(1.05, 0.95, 1);
+	}
+	100% {
+		transform: scale3d(1, 1, 1);
+	}
 }
 
 @keyframes blink {

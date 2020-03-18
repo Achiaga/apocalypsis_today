@@ -11,6 +11,11 @@
 	background-size: cover;
 	border-radius: 50%;
 	padding: 0;
+	box-shadow: 0 0 80px cyan, 0 0 30px darkcyan, 0 0 6px darkcyan;
+}
+
+.logo:hover {
+	cursor: pointer;
 	animation: colorShifter 20s infinite;
 }
 
