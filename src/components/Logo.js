@@ -14,6 +14,10 @@ function Logo() {
 				<span></span>
 				<span></span>
 				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
 			</div>
 			<div class='pouce'>
 				<div class='pouce-part'></div>

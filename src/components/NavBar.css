@@ -1,0 +1,29 @@
+.navbar {
+	background-color: #171717;
+	position: absolute;
+	left: 0em;
+	width: 10rem;
+	height: 100vh;
+	top: 0;
+	padding: 0;
+	margin: 0;
+	color: #4d4d4e;
+	font-size: xx-small;
+	z-index: -99999;
+}
+
+.navbar-container {
+	position: relative;
+	top: 30vh;
+}
+
+.navbar-container > h1 {
+	border: 1px dashed yellow;
+	padding: 1rem;
+	margin: 0;
+}
+
+.navbar-container > h1:hover {
+	cursor: pointer;
+	color: cyan;
+}
