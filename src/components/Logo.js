@@ -4,8 +4,8 @@ import './Logo.css';
 
 function Logo() {
 	return (
-		<div class='logo-wrapper'>
-			<div class='logo-fountain'>
+		<div className='logo-wrapper'>
+			<div className='logo-fountain'>
 				<img src={logo} alt='logo' className='logo' />
 				<span></span>
 				<span></span>
@@ -19,8 +19,8 @@ function Logo() {
 				<span></span>
 				<span></span>
 			</div>
-			<div class='pouce'>
-				<div class='pouce-part'></div>
+			<div className='pouce'>
+				<div className='pouce-part'></div>
 			</div>
 		</div>
 	);
