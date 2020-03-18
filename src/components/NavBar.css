@@ -21,6 +21,7 @@
 	border: 1px dashed yellow;
 	padding: 1rem;
 	margin: 0;
+	z-index: 100;
 }
 
 .navbar-container > h1:hover {

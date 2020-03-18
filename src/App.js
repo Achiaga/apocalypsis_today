@@ -2,7 +2,7 @@ import React from 'react';
 import CoverPage from './components/CoverPage';
 import Logo from './components/Logo';
 import NavBar from './components/NavBar';
-import Clock from './components/Clock';
+import CountdownTimer from './components/CountdownTimer';
 import './App.css';
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
 			<Logo />
 			<CoverPage />
 			<NavBar />
-			<Clock />
+			<CountdownTimer />
 		</div>
 	);
 }
