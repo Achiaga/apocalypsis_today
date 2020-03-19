@@ -16,7 +16,7 @@
 	text-shadow: 0 0 80px rgb(255, 255, 0), 0 0 30px darkgoldenrod,
 		0 0 6px darkgoldenrod;
 	height: 5rem;
-	margin-top: 0.5rem;
+	padding-top: 1.5rem;
 	margin-left: 3rem;
 	position: relative;
 	z-index: -10;
@@ -30,7 +30,6 @@
 
 .tittle > span:hover {
 	cursor: pointer;
-
 	color: cyan;
 	text-shadow: 0 0 80px cyan, 0 0 30px darkcyan, 0 0 6px darkcyan;
 	animation: bounceLetter 0.9s;
@@ -72,11 +71,31 @@
 }
 
 #hangEdge span {
+	z-index: 110;
 	animation: slowBlink 15s linear infinite;
 	animation-delay: 13s;
 }
 #hangEdge > span:hover {
 	cursor: pointer;
+	position: absolute;
+	color: white;
+	animation: fall 10s linear;
+}
+
+@keyframes fall {
+	0%,
+	100% {
+		transform: translate3d(0, 0, 0);
+		opacity: 1;
+	}
+	49.999% {
+		transform: translate3d(0, -120px, 0);
+		opacity: 0;
+	}
+	50.001% {
+		transform: translate3d(0, 120px, 0);
+		opacity: 0;
+	}
 }
 
 @keyframes bounceLetter {

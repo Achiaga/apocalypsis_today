@@ -15,6 +15,10 @@ export default function CountdownTimer() {
 			};
 		}
 
+		if (timeLeft.hours < 10) timeLeft.hours = '0' + timeLeft.hours;
+		if (timeLeft.minutes < 10) timeLeft.minutes = '0' + timeLeft.minutes;
+		if (timeLeft.seconds < 10) timeLeft.seconds = '0' + timeLeft.seconds;
+
 		return timeLeft;
 	};
 
@@ -26,23 +30,24 @@ export default function CountdownTimer() {
 		}, 1000);
 	});
 
-	const timerComponents = [];
-
-	Object.keys(timeLeft).forEach(interval => {
-		if (!timeLeft[interval]) {
-			return;
-		}
-
-		timerComponents.push(
-			<span>
-				{timeLeft[interval]} {interval}{' '}
-			</span>
-		);
-	});
-
-	return (
-		<div className='clock'>
-			{timerComponents.length ? timerComponents : <span>Time's up!</span>}
-		</div>
+	const timerComponents = (
+		<>
+			<div>
+				{timeLeft.days} d : {timeLeft.hours} h : {timeLeft.minutes} m :{' '}
+				{timeLeft.seconds} s
+			</div>
+			<div>
+				{timeLeft.days} d : {timeLeft.hours} h : {timeLeft.minutes} m :{' '}
+				{timeLeft.seconds} s
+			</div>
+			<div>
+				{timeLeft.days} d : {timeLeft.hours} h : {timeLeft.minutes} m :{' '}
+				{timeLeft.seconds} s
+			</div>
+		</>
 	);
+
+	const timeIsUp = <span>The apocalypsis has come!</span>;
+
+	return <div className='glitch'>{timeLeft ? timerComponents : timeIsUp}</div>;
 }
