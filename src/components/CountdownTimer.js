@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './CountdownTimer.css';
+import nuclear from '../assets/nuclear_bomb.jpg';
 
 export default function CountdownTimer() {
 	const calculateTimeLeft = () => {
@@ -30,24 +31,22 @@ export default function CountdownTimer() {
 		}, 1000);
 	});
 
+	const time = (
+		<span>
+			{timeLeft.days} d : {timeLeft.hours} h : {timeLeft.minutes} m :{' '}
+			{timeLeft.seconds} s
+		</span>
+	);
+
 	const timerComponents = (
-		<>
-			<div>
-				{timeLeft.days} d : {timeLeft.hours} h : {timeLeft.minutes} m :{' '}
-				{timeLeft.seconds} s
-			</div>
-			<div>
-				{timeLeft.days} d : {timeLeft.hours} h : {timeLeft.minutes} m :{' '}
-				{timeLeft.seconds} s
-			</div>
-			<div>
-				{timeLeft.days} d : {timeLeft.hours} h : {timeLeft.minutes} m :{' '}
-				{timeLeft.seconds} s
-			</div>
-		</>
+		<div className='countdown'>
+			{/* <p style={{ opacity: 0, fontSize: '10px' }}>.</p> */}
+			<img src={nuclear} alt='clock-image' className='nucelar' />
+			<p className='time'>{time}</p>
+		</div>
 	);
 
 	const timeIsUp = <span>The apocalypsis has come!</span>;
 
-	return <div className='glitch'>{timeLeft ? timerComponents : timeIsUp}</div>;
+	return <>{timeLeft ? timerComponents : timeIsUp}</>;
 }

@@ -1,207 +1,29 @@
-.glitch {
-	/* color: cyan; */
-	text-shadow: 0 0 80px white, 0 0 30px yellow, 0 0 6px yellow;
-	/* font-family: 'Emblema One', cursive; */
-	/* font-family: 'Press Start 2P', cursive; */
-	font-family: 'Orbitron', cursive;
-	letter-spacing: 0.05em;
-	font-size: 3em;
-	font-weight: bold;
-	height: 40vh;
+.countdown {
+	position: relative;
+	width: 30vw;
+	height: 50vh;
+	margin: auto;
+	margin-top: 100vh;
 }
 
-.glitch > div {
-	/*Create overlap*/
-	margin: 0;
-	line-height: 0;
-	/*Animation*/
-	animation: glitch1 40s infinite;
+.time > span {
+	position: absolute;
+	left: 17%;
+	top: 57%;
+	color: white;
+	background-color: #1c1c1c;
+	border-radius: 45%;
+	border: 1px solid white;
+	padding: 0.8rem 1.4rem;
+	font-size: 1.7rem;
+	font-family: Piedra, 'cursive';
+	box-shadow: inset 0 0 80px rgb(255, 255, 0), 0 0 30px darkgoldenrod,
+		0 0 6px darkgoldenrod;
 }
 
-.glitch > div:nth-child(2) {
-	color: #67f3da;
-	animation: glitch2 40s infinite;
-}
-
-.glitch > div:nth-child(3) {
-	color: #f16f6f;
-	animation: glitch3 40s infinite;
-}
-/*Keyframes*/
-
-@keyframes glitch1 {
-	0% {
-		transform: none;
-		opacity: 1;
-	}
-	2.1% {
-		transform: skew(-0.5deg, -0.9deg);
-		opacity: 0.75;
-	}
-	3% {
-		transform: none;
-		opacity: 1;
-	}
-	8.1% {
-		transform: none;
-		opacity: 1;
-	}
-	9% {
-		transform: skew(0.8deg, -0.1deg);
-		opacity: 0.75;
-	}
-	10.5% {
-		transform: none;
-		opacity: 1;
-	}
-	15.6% {
-		transform: none;
-		opacity: 1;
-	}
-	16.5% {
-		transform: skew(-1deg, 0.2deg);
-		opacity: 0.75;
-	}
-	15% {
-		transform: none;
-		opacity: 1;
-	}
-	21.6% {
-		transform: none;
-		opacity: 1;
-	}
-	22.5% {
-		transform: skew(0.4deg, 1deg);
-		opacity: 0.75;
-	}
-	24% {
-		transform: none;
-		opacity: 1;
-	}
-	30% {
-		transform: none;
-		opacity: 1;
-	}
-	100% {
-		transform: none;
-		opacity: 1;
-	}
-}
-
-@keyframes glitch2 {
-	0% {
-		transform: none;
-		opacity: 0.25;
-	}
-	7% {
-		transform: translate(-2px, -3px);
-		opacity: 0.5;
-	}
-	3% {
-		transform: none;
-		opacity: 0.25;
-	}
-	8.1% {
-		transform: none;
-		opacity: 0.25;
-	}
-	9% {
-		transform: translate(-5px, -2px);
-		opacity: 0.5;
-	}
-	10.5% {
-		transform: none;
-		opacity: 0.25;
-	}
-	15.6% {
-		transform: none;
-		opacity: 0.25;
-	}
-	16.5% {
-		transform: translate(-5px, -1px);
-		opacity: 0.5;
-	}
-	15% {
-		transform: none;
-		opacity: 0.25;
-	}
-	21.6% {
-		transform: none;
-		opacity: 0.25;
-	}
-	22.5% {
-		transform: translate(-2px, -6px);
-		opacity: 0.5;
-	}
-	24% {
-		transform: none;
-		opacity: 0.25;
-	}
-	30% {
-		transform: none;
-		opacity: 0.25;
-	}
-	100% {
-		transform: none;
-		opacity: 0;
-	}
-}
-
-@keyframes glitch3 {
-	0% {
-		transform: none;
-		opacity: 0.25;
-	}
-	7% {
-		transform: translate(2px, 3px);
-		opacity: 0.5;
-	}
-	3% {
-		transform: none;
-		opacity: 0.25;
-	}
-	8.1% {
-		transform: none;
-		opacity: 0.25;
-	}
-	9% {
-		transform: translate(5px, 2px);
-		opacity: 0.5;
-	}
-	10.5% {
-		transform: none;
-		opacity: 0.25;
-	}
-	15.6% {
-		transform: none;
-		opacity: 0.25;
-	}
-	16.5% {
-		transform: translate(5px, 1px);
-		opacity: 0.5;
-	}
-	15% {
-		transform: none;
-		opacity: 0.25;
-	}
-	21.6% {
-		transform: none;
-		opacity: 0.25;
-	}
-	22.5% {
-		transform: translate(2px, 6px);
-		opacity: 0.5;
-	}
-	24% {
-		transform: none;
-		opacity: 0.25;
-	}
-	30% {
-		transform: none;
-		opacity: 0.25;
-	}
-	100% {
-		transform: none;
-		opacity: 0;
-	}
+.nucelar {
+	border-radius: 25%;
+	width: 25rem;
+	height: 25rem;
+	box-shadow: 0 0 80px red, 0 0 30px darkgoldenrod, 0 0 6px darkgoldenrod;
 }
