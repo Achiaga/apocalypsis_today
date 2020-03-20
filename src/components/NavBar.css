@@ -1,6 +1,6 @@
 .navbar {
 	background-color: #171717;
-	position: absolute;
+	position: fixed;
 	left: 0em;
 	width: 10rem;
 	height: 100vh;
@@ -14,7 +14,7 @@
 
 .navbar-container {
 	position: relative;
-	top: 35vh;
+	top: 30vh;
 }
 
 .navbar-container > h1 {

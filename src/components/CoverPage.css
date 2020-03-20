@@ -1,24 +1,30 @@
 .tittle {
+	/* position */
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	/* color: red; */
-	color: rgb(255, 255, 0);
-	text-align: center;
-	font-size: 3.5rem;
-	text-transform: uppercase;
-	font-family: 'Monoton', cursive;
-	/* font-family: 'Nosifer', cursive; */
-	/* font-family: 'Piedra', cursive; */
-	word-spacing: 4rem;
-	letter-spacing: 13px;
-	/* text-shadow: 0 0 80px red, 0 0 30px FireBrick, 0 0 6px DarkRed; */
-	text-shadow: 0 0 80px rgb(255, 255, 0), 0 0 30px darkgoldenrod,
-		0 0 6px darkgoldenrod;
+	margin: auto;
+	top: 0;
+	left: 0;
+	right: 0;
 	height: 5rem;
 	padding-top: 1.5rem;
-	margin-left: 3rem;
-	position: relative;
+	margin-left: 10rem;
+	/* text  */
+	text-align: center;
+	text-transform: uppercase;
+	/* color: red; */
+	/* font-family: 'Nosifer', cursive; */
+	word-spacing: 4rem;
+	letter-spacing: 13px;
+	color: rgb(255, 255, 0);
+	text-shadow: 0 0 80px rgb(255, 255, 0), 0 0 30px darkgoldenrod,
+		0 0 6px darkgoldenrod;
+	/* text-shadow: 0 0 80px red, 0 0 30px FireBrick, 0 0 6px DarkRed; */
+	/* font-family: 'Piedra', cursive; */
+	font-family: 'Monoton', cursive;
+	font-size: 3.5rem;
+	/* margin and padding */
 	z-index: -10;
 	/* animation: tittle 5s linear forwards;
 	animation-delay: 0s; */
@@ -74,12 +80,6 @@
 	z-index: 110;
 	animation: slowBlink 15s linear infinite;
 	animation-delay: 13s;
-}
-#hangEdge > span:hover {
-	cursor: pointer;
-	position: absolute;
-	color: white;
-	animation: fall 10s linear;
 }
 
 @keyframes fall {
