@@ -2,7 +2,7 @@
 	text-align: center;
 	position: relative;
 	color: white;
-	margin-top: 8rem;
+	margin-top: 4rem;
 	left: 19%;
 	height: 20vh;
 	width: 50vw;
@@ -26,8 +26,8 @@
 .css-typing p:nth-child(2) {
 	width: 32em;
 	opacity: 0;
-	-webkit-animation: type2 3s steps(40, end);
-	animation: type2 3s steps(40, end);
+	-webkit-animation: type 3s steps(40, end);
+	animation: type 3s steps(40, end);
 	-webkit-animation-delay: 2s;
 	animation-delay: 3s;
 	-webkit-animation-fill-mode: forwards;
@@ -37,9 +37,9 @@
 .css-typing p:nth-child(3) {
 	width: 21em;
 	opacity: 0;
-	-webkit-animation: type3 3s steps(20, end),
+	-webkit-animation: type 3s steps(20, end),
 		blink 0.5s step-end infinite alternate;
-	animation: type3 3s steps(40, end);
+	animation: type 3s steps(40, end);
 	-webkit-animation-delay: 4s;
 	animation-delay: 6s;
 	-webkit-animation-fill-mode: forwards;
@@ -48,9 +48,9 @@
 .css-typing p:nth-child(4) {
 	width: 27em;
 	opacity: 0;
-	-webkit-animation: type3 3s steps(20, end),
+	-webkit-animation: type 3s steps(20, end),
 		blink 0.5s step-end infinite alternate;
-	animation: type3 3s steps(40, end);
+	animation: type 3s steps(40, end);
 	-webkit-animation-delay: 4s;
 	animation-delay: 9s;
 	-webkit-animation-fill-mode: forwards;
@@ -59,9 +59,9 @@
 .css-typing p:nth-child(5) {
 	width: 20em;
 	opacity: 0;
-	-webkit-animation: type3 3s steps(20, end),
+	-webkit-animation: type 3s steps(20, end),
 		blink 0.5s step-end infinite alternate;
-	animation: type3 3s steps(40, end);
+	animation: type 3s steps(40, end);
 	-webkit-animation-delay: 4s;
 	animation-delay: 12s;
 	-webkit-animation-fill-mode: forwards;
@@ -70,9 +70,9 @@
 .css-typing p:nth-child(6) {
 	width: 31em;
 	opacity: 0;
-	-webkit-animation: type3 3s steps(20, end),
+	-webkit-animation: type 3s steps(20, end),
 		blink 0.5s step-end infinite alternate;
-	animation: type3 3s steps(20, end);
+	animation: type 3s steps(40, end);
 	-webkit-animation-delay: 4s;
 	animation-delay: 15s;
 	-webkit-animation-fill-mode: forwards;
@@ -81,9 +81,9 @@
 .css-typing p:nth-child(7) {
 	width: 10em;
 	opacity: 0;
-	-webkit-animation: type3 3s steps(20, end),
+	-webkit-animation: type 3s steps(20, end),
 		blink 0.5s step-end infinite alternate;
-	animation: type3 3s steps(20, end);
+	animation: type 3s steps(40, end);
 	-webkit-animation-delay: 4s;
 	animation-delay: 18s;
 	-webkit-animation-fill-mode: forwards;
@@ -92,22 +92,22 @@
 .css-typing p:nth-child(8) {
 	width: 29em;
 	opacity: 0;
-	-webkit-animation: type3 3s steps(20, end),
+	-webkit-animation: type 3s steps(20, end),
 		blink 0.5s step-end infinite alternate;
-	animation: type3 3s steps(20, end);
+	animation: type 3s steps(40, end);
 	-webkit-animation-delay: 4s;
 	animation-delay: 21s;
 	-webkit-animation-fill-mode: forwards;
 	animation-fill-mode: forwards;
 }
 .css-typing p:nth-child(9) {
-	width: 34em;
+	width: 35em;
 	opacity: 0;
-	-webkit-animation: type3 3s steps(20, end),
+	-webkit-animation: type-end 3s steps(20, end),
 		blink 0.5s step-end infinite alternate;
-	animation: type3 3s steps(20, end);
+	animation: type-end 3s steps(40, end), blink 0.5s step-end infinite alternate;
 	-webkit-animation-delay: 4s;
-	animation-delay: 25s;
+	animation-delay: 24s;
 	-webkit-animation-fill-mode: forwards;
 	animation-fill-mode: forwards;
 }
@@ -116,10 +116,14 @@
 	0% {
 		width: 0;
 	}
+	1% {
+		opacity: 1;
+	}
 	99.9% {
 		border-right: 0.15em solid orange;
 	}
 	100% {
+		opacity: 1;
 		border: none;
 	}
 }
@@ -128,18 +132,6 @@
 	0% {
 		width: 0;
 	}
-	99.9% {
-		border-right: 0.15em solid orange;
-	}
-	100% {
-		border: none;
-	}
-}
-
-@keyframes type2 {
-	0% {
-		width: 0;
-	}
 	1% {
 		opacity: 1;
 	}
@@ -152,51 +144,27 @@
 	}
 }
 
-@-webkit-keyframes type2 {
+@keyframes type-end {
 	0% {
 		width: 0;
 	}
 	1% {
 		opacity: 1;
 	}
-	99.9% {
-		border-right: 0.15em solid orange;
-	}
 	100% {
 		opacity: 1;
-		border: none;
 	}
 }
 
-@keyframes type3 {
+@-webkit-keyframes type-end {
 	0% {
 		width: 0;
 	}
 	1% {
 		opacity: 1;
 	}
-	99.9% {
-		border-right: 0.15em solid orange;
-	}
 	100% {
 		opacity: 1;
-		border: none;
-	}
-}
-
-@-webkit-keyframes type3 {
-	0% {
-		width: 0;
-	}
-	1% {
-		opacity: 1;
-	}
-	99.9% {
-		border-right: 0.15em solid orange;
-	}
-	100% {
-		opacity: 1;
-		border: none;
 	}
 }
 
