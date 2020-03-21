@@ -41,7 +41,7 @@ export default function CountdownTimer() {
 	const timerComponents = (
 		<div className='countdown'>
 			{/* <p style={{ opacity: 0, fontSize: '10px' }}>.</p> */}
-			<img src={nuclear} alt='clock-image' className='nucelar' />
+			<img src={nuclear} alt='bomb' className='nucelar' />
 			<p className='text'>Countdown</p>
 			<p className='time'>{time}</p>
 		</div>

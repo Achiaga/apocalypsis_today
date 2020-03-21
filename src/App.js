@@ -1,6 +1,5 @@
 import React from 'react';
 import CoverPage from './components/CoverPage';
-import OctopusLogo from './components/OctopusLogo';
 import NavBar from './components/NavBar';
 import CountdownLogo from './components/CountdownLogo';
 import Type from './components/Type';
