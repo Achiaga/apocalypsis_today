@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from '../assets/gas-mask.png';
-import './Logo.css';
+import './OctopusLogo.css';
 
 function Logo() {
 	return (

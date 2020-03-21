@@ -12,7 +12,7 @@ export default function Type() {
 			<p>Or option 2, what can I do to avoid being the idiot</p>
 			<p>of the option 1.</p>
 			<p>Maybe you have watched The walking Dead, well...</p>
-			<p>This is gonna be kind of similar but without fucking Carl</p>
+			<p>This is gonna be kind of similar but without fucking Carl.</p>
 		</div>
 	);
 }

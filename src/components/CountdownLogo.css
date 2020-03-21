@@ -1,0 +1,32 @@
+.countdown {
+	position: fixed;
+	left: 2%;
+	top: 5%;
+}
+
+.time > span {
+	position: absolute;
+	left: 0%;
+	top: -8%;
+	padding-top: 8px;
+	padding-bottom: 18px;
+	color: white;
+	width: 9rem;
+	overflow: visible;
+	background-color: #090042;
+	border: 1px solid red;
+	border-bottom: 0px solid transparent;
+	font-size: 0.9rem;
+	font-family: Piedra, 'cursive';
+	text-shadow: 0 0 80px white, 0 0 30px whitesmoke, 0 0 6px whitesmoke;
+	/* box-shadow: -1px -20px 80px cyan, 0px -19px 30px darkcyan,
+		0px -14px 20px darkcyan; */
+}
+
+.nucelar {
+	border-radius: 0% 0% 25% 25%;
+	width: 9rem;
+	height: 9rem;
+	border: 1px solid red;
+	box-shadow: 0 0 80px red, 0 0 30px darkgoldenrod, 0 0 6px darkgoldenrod;
+}

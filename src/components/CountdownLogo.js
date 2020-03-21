@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import './CountdownTimer.css';
-import nuclear from '../assets/nuclear_bomb.jpg';
+import './CountdownLogo.css';
+import nuclear from '../assets/nuclear_bomb4.png';
 
 export default function CountdownTimer() {
 	const calculateTimeLeft = () => {
