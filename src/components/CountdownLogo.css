@@ -1,32 +1,82 @@
 .countdown {
 	position: fixed;
 	left: 2%;
-	top: 5%;
+	top: 3%;
+	transition: all 0.2s ease-in-out;
 }
 
 .time > span {
 	position: absolute;
-	left: 0%;
-	top: -8%;
-	padding-top: 8px;
-	padding-bottom: 18px;
+	left: 2%;
+	top: 33%;
+	padding: 1px 1px;
 	color: white;
-	width: 9rem;
 	overflow: visible;
-	background-color: #090042;
-	border: 1px solid red;
-	border-bottom: 0px solid transparent;
+	background-color: rgba(0, 0, 0, 0.678);
 	font-size: 0.9rem;
 	font-family: Piedra, 'cursive';
-	text-shadow: 0 0 80px white, 0 0 30px whitesmoke, 0 0 6px whitesmoke;
-	/* box-shadow: -1px -20px 80px cyan, 0px -19px 30px darkcyan,
-		0px -14px 20px darkcyan; */
+}
+
+.text {
+	position: absolute;
+	text-transform: uppercase;
+	left: 6%;
+	top: 0%;
+	background: #0b0042;
+	padding: 0;
+	margin: 0;
+	color: darkgoldenrod;
+	width: 8rem;
+	overflow: visible;
+	font-size: 1.3rem;
+	font-family: Piedra, 'cursive';
 }
 
 .nucelar {
-	border-radius: 0% 0% 25% 25%;
+	border-radius: 50%;
 	width: 9rem;
 	height: 9rem;
-	border: 1px solid red;
-	box-shadow: 0 0 80px red, 0 0 30px darkgoldenrod, 0 0 6px darkgoldenrod;
+	border: 1px solid goldenrod;
+	box-shadow: 0 0 80px yellow, 0 0 30px darkgoldenrod, 0 0 6px darkgoldenrod;
+}
+
+.countdown:hover {
+	cursor: pointer;
+}
+.countdown:hover > .nucelar {
+	animation: hoverRotation 3s forwards;
+}
+.time:hover > span {
+	position: absolute;
+	width: 5rem;
+	animation: hoverScale 1s forwards;
+}
+
+@keyframes hoverRotation {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	30% {
+		transform: rotate(1440deg);
+	}
+
+	100% {
+		transform: rotate(0deg);
+	}
+}
+
+@keyframes hoverScale {
+	0% {
+		transform: scale(1);
+		background: black;
+		width: 9rem;
+	}
+	100% {
+		transform: scale(1.7);
+		background: black;
+		left: 12%;
+		width: 9rem;
+		text-align: center;
+	}
 }

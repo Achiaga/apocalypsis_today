@@ -42,6 +42,7 @@ export default function CountdownTimer() {
 		<div className='countdown'>
 			{/* <p style={{ opacity: 0, fontSize: '10px' }}>.</p> */}
 			<img src={nuclear} alt='clock-image' className='nucelar' />
+			<p className='text'>Countdown</p>
 			<p className='time'>{time}</p>
 		</div>
 	);

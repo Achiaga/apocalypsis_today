@@ -3,7 +3,7 @@ import './Type.css';
 
 export default function Type() {
 	return (
-		<div class='css-typing'>
+		<div className='css-typing'>
 			<p>Ready to the collapse of our society. </p>
 			<p>Sit tight because this is going to be a hell of ride. </p>
 			<p>There can be 2 possible scenarios:</p>
