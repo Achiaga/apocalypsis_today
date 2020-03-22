@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './CountdownLogo.css';
 import nuclear from '../assets/nuclear_bomb4.png';
 
-export default function CountdownTimer() {
+export const CountdownLogo = () => {
 	const calculateTimeLeft = () => {
 		const difference = +new Date('2021-01-01') - +new Date();
 		let timeLeft = {};
@@ -31,23 +31,27 @@ export default function CountdownTimer() {
 		}, 1000);
 	});
 
-	const time = (
-		<span>
-			{timeLeft.days} d : {timeLeft.hours} h : {timeLeft.minutes} m :{' '}
-			{timeLeft.seconds} s
-		</span>
-	);
+	const Time = () => {
+		return (
+			<span>
+				{timeLeft.days} d : {timeLeft.hours} h : {timeLeft.minutes} m :{' '}
+				{timeLeft.seconds} s
+			</span>
+		);
+	};
 
-	const timerComponents = (
-		<div className='countdown'>
-			{/* <p style={{ opacity: 0, fontSize: '10px' }}>.</p> */}
-			<img src={nuclear} alt='bomb' className='nucelar' />
-			<p className='text'>Countdown</p>
-			<p className='time'>{time}</p>
-		</div>
-	);
+	const TimerComponents = () => {
+		return (
+			<div className='countdown'>
+				{/* <p style={{ opacity: 0, fontSize: '10px' }}>.</p> */}
+				<img src={nuclear} alt='bomb' className='nucelar' />
+				<p className='text'>Countdown</p>
+				<Time className='time' />
+			</div>
+		);
+	};
 
 	const timeIsUp = <span>The apocalypsis has come!</span>;
 
-	return <>{timeLeft ? timerComponents : timeIsUp}</>;
-}
+	return <>{timeLeft ? <TimerComponents /> : timeIsUp}</>;
+};
