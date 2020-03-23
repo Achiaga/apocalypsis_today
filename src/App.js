@@ -1,17 +1,17 @@
 import React from 'react';
 import CoverPage from './components/CoverPage';
-import Logo from './components/Logo';
 import NavBar from './components/NavBar';
-import Clock from './components/Clock';
+import { CountdownLogo } from './components/CountdownLogo';
+import Type from './components/Type';
 import './App.css';
 
 function App() {
 	return (
 		<div className='app'>
-			<Logo />
-			<CoverPage />
 			<NavBar />
-			<Clock />
+			<CountdownLogo />
+			<CoverPage />
+			<Type />
 		</div>
 	);
 }
