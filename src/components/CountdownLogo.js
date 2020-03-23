@@ -33,7 +33,7 @@ export const CountdownLogo = () => {
 
 	const Time = () => {
 		return (
-			<span>
+			<span className='time'>
 				{timeLeft.days} d : {timeLeft.hours} h : {timeLeft.minutes} m :{' '}
 				{timeLeft.seconds} s
 			</span>
@@ -46,7 +46,7 @@ export const CountdownLogo = () => {
 				{/* <p style={{ opacity: 0, fontSize: '10px' }}>.</p> */}
 				<img src={nuclear} alt='bomb' className='nucelar' />
 				<p className='text'>Countdown</p>
-				<Time className='time' />
+				<Time />
 			</div>
 		);
 	};

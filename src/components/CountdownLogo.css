@@ -5,7 +5,7 @@
 	transition: all 0.2s ease-in-out;
 }
 
-.time > span {
+.time {
 	position: absolute;
 	left: 2%;
 	top: 33%;
@@ -46,7 +46,7 @@
 .countdown:hover > .nucelar {
 	animation: hoverRotation 3s forwards;
 }
-.time:hover > span {
+.time:hover {
 	position: absolute;
 	width: 5rem;
 	animation: hoverScale 1s forwards;
