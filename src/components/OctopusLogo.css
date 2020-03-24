@@ -6,6 +6,7 @@
 	margin-top: 12rem;
 	margin-left: 10rem;
 	transform: scale(2) translate(-50%, -50%);
+	z-index: 15;
 }
 .logo {
 	width: 2rem;
@@ -53,12 +54,12 @@
 	width: 24px;
 	border-radius: 50%;
 }
-.logo-fountain > span,
-.logo-fountain > span::before {
+.logo-fountain:hover > span,
+.logo-fountain:hover > span::before {
 	animation: pouceAnimation 3s ease-in-out infinite alternate forwards;
 }
 
-.logo-fountain > span:before {
+.logo-fountain:hover > span:before {
 	content: ':';
 	position: absolute;
 	width: 100%;
@@ -69,47 +70,47 @@
 	right: -6px;
 	opacity: 0;
 }
-.logo-fountain > span:nth-child(1) {
+.logo-fountain:hover > span:nth-child(1) {
 	transform: translate(var(--translation, -50%)) rotate(var(--rotation, 360deg))
 		scale(var(--scaling, 1));
 }
-.logo-fountain > span:nth-child(2) {
+.logo-fountain:hover > span:nth-child(2) {
 	transform: translate(var(--translation, -50%)) rotate(var(--rotation, 324deg))
 		scale(var(--scaling, 1));
 }
-.logo-fountain > span:nth-child(3) {
+.logo-fountain:hover > span:nth-child(3) {
 	transform: translate(var(--translation, -50%)) rotate(var(--rotation, 288deg))
 		scale(var(--scaling, 1));
 }
-.logo-fountain > span:nth-child(4) {
+.logo-fountain:hover > span:nth-child(4) {
 	transform: translate(var(--translation, -50%)) rotate(var(--rotation, 252deg))
 		scale(var(--scaling, 1));
 }
-.logo-fountain > span:nth-child(5) {
+.logo-fountain:hover > span:nth-child(5) {
 	transform: translate(var(--translation, -50%)) rotate(var(--rotation, 230deg))
 		scale(var(--scaling, 1));
 }
-.logo-fountain > span:nth-child(6) {
+.logo-fountain:hover > span:nth-child(6) {
 	transform: translate(var(--translation, -50%)) rotate(var(--rotation, 180deg))
 		scale(var(--scaling, 1));
 }
-.logo-fountain > span:nth-child(7) {
+.logo-fountain:hover > span:nth-child(7) {
 	transform: translate(var(--translation, -50%)) rotate(var(--rotation, 144deg))
 		scale(var(--scaling, 1));
 }
-.logo-fountain > span:nth-child(8) {
+.logo-fountain:hover > span:nth-child(8) {
 	transform: translate(var(--translation, -50%)) rotate(var(--rotation, 108deg))
 		scale(var(--scaling, 1));
 }
-.logo-fountain > span:nth-child(9) {
+.logo-fountain:hover > span:nth-child(9) {
 	transform: translate(var(--translation, -50%)) rotate(var(--rotation, 72deg))
 		scale(var(--scaling, 1));
 }
-.logo-fountain > span:nth-child(10) {
+.logo-fountain:hover > span:nth-child(10) {
 	transform: translate(var(--translation, -50%)) rotate(var(--rotation, 36deg))
 		scale(var(--scaling, 1));
 }
-.logo-fountain > span:nth-child(11) {
+.logo-fountain:hover > span:nth-child(11) {
 	transform: translate(var(--translation, -50%)) rotate(var(--rotation, 0deg))
 		scale(var(--scaling, 1));
 }
