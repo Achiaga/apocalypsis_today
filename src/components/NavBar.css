@@ -14,7 +14,8 @@
 
 .navbar-container {
 	position: relative;
-	top: 30vh;
+	top: 27vh;
+	background-color: #171717;
 }
 
 .navbar-container > h1 {
@@ -22,12 +23,19 @@
 	margin: 0;
 	z-index: 100;
 }
+.navbar-container > h1:nth-child(1) {
+	color: cyan;
+}
 
 .navbar-container > h1:hover {
 	cursor: pointer;
 	color: cyan;
 	overflow: hidden;
 	animation: bounceLetter 0.9s;
+}
+
+.navbar-container > h1:active {
+	color: cyan;
 }
 
 @keyframes bounceLetter {

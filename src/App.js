@@ -20,7 +20,7 @@ const BgMap = styled.img`
 	position: absolute;
 	right: 0;
 	top: 0%;
-	width: 100vw;
+	width: 1300px;
 	height: 100vh;
 	z-index: -1;
 	overflow: hidden;
@@ -28,9 +28,9 @@ const BgMap = styled.img`
 const BgMask = styled.img`
 	position: absolute;
 	right: 0;
-	top: 30%;
-	width: 700px;
-	height: 600px;
+	top: 70%;
+	width: 600px;
+	height: 400px;
 	z-index: -1;
 	mask: radial-gradient(circle at 20% 40%, transparent, #fff 50%);
 	overflow: hidden;
