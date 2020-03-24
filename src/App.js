@@ -4,7 +4,7 @@ import NavBar from './components/NavBar';
 import OctopusLogo from './components/OctopusLogo';
 import { Main } from './components/Main.js';
 import MainBg from './assets/map.jpg';
-import SecondBg from './assets/maskbg.jpg';
+import SecondBg from './assets/maskbg.png';
 
 import styled from 'styled-components';
 
@@ -13,24 +13,27 @@ const AppContainer = styled.div`
 	position: sticky;
 	margin: auto;
 	height: 100%;
+	width: 100vw;
 `;
 
 const BgMap = styled.img`
 	position: absolute;
-	left: 10%;
+	right: 0;
 	top: 0%;
 	width: 100vw;
 	height: 100vh;
 	z-index: -1;
+	overflow: hidden;
 `;
 const BgMask = styled.img`
 	position: absolute;
-	left: 75%;
+	right: 0;
 	top: 30%;
-	width: 400px;
-	height: 800px;
+	width: 700px;
+	height: 600px;
 	z-index: -1;
 	mask: radial-gradient(circle at 20% 40%, transparent, #fff 50%);
+	overflow: hidden;
 `;
 
 function App() {
