@@ -1,7 +1,6 @@
 import React from 'react';
 import CoverPage from './components/CoverPage';
-import NavBar from './components/NavBar';
-import OctopusLogo from './components/OctopusLogo';
+import { Drawer } from './components/Drawer';
 import { Main } from './components/Main.js';
 import MainBg from './assets/map.jpg';
 import SecondBg from './assets/maskbg.png';
@@ -39,8 +38,7 @@ const BgMask = styled.img`
 function App() {
 	return (
 		<AppContainer>
-			<NavBar />
-			<OctopusLogo />
+			<Drawer />
 			<BgMap src={MainBg} alt='main-background' />
 			<BgMask src={SecondBg} alt='second-background' />
 			<CoverPage />

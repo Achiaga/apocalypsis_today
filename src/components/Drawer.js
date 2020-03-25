@@ -1,5 +1,6 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
+import OctopusLogo from './OctopusLogo';
 
 const Navbar = styled.div`
 	background-color: #171717;
@@ -12,7 +13,7 @@ const Navbar = styled.div`
 	margin: 0;
 	color: #4d4d4e;
 	font-size: xx-small;
-	z-index: 10;
+	z-index: 16;
 `;
 
 const NavbarContainer = styled.div`
@@ -61,9 +62,10 @@ const Element = styled.h1`
 	}
 `;
 
-export default function Drawer() {
+export const Drawer = () => {
 	return (
 		<Navbar>
+			<OctopusLogo />
 			<NavbarContainer>
 				<Element>Home</Element>
 				<Element>Survival</Element>
@@ -74,4 +76,4 @@ export default function Drawer() {
 			</NavbarContainer>
 		</Navbar>
 	);
-}
+};

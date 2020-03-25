@@ -102,42 +102,15 @@ const hang = keyframes`
 	1.99% {
 		transform: rotate(-5deg);
 	}
-	2%,
-	2.99% {
-		transform: rotate(5deg);
-	}
-	3%,
-	3.99% {
-		transform: rotate(-5deg);
-	}
-	4%,
-	4.99% {
-		transform: rotate(5deg);
-	}
-	5%,
-	5.99% {
-		transform: rotate(-5deg);
-	}
-	6%,
-	6.99% {
-		transform: rotate(5deg);
-	}
-	7%,
-	7.99% {
-		transform: rotate(-5deg);
-	}
-	8%,
-	8.99% {
-		transform: rotate(5deg);
-	}
-	9%,
-	9.99% {
-		transform: rotate(-5deg);
-	}
-	10%,
-	10.99% {
-		transform: rotate(5deg);
-	}
+	2%,2.99% {transform: rotate(5deg);}
+	3%,3.99% {transform: rotate(-5deg);}
+	4%,4.99% {transform: rotate(5deg);}
+	5%,5.99% {transform: rotate(-5deg);}
+	6%,6.99% {transform: rotate(5deg);}
+	7%,7.99% {transform: rotate(-5deg);}
+	8%,8.99% {transform: rotate(5deg);}
+	9%,9.99% {transform: rotate(-5deg);}
+	10%,10.99% {transform: rotate(5deg);}
 	14% {
 		/* color: rgb(105, 8, 8); */
 		color: darkgoldenrod;

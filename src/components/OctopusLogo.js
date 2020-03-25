@@ -11,7 +11,7 @@ const LogoWrapper = styled.div`
 	margin-top: 12rem;
 	margin-left: 10rem;
 	transform: scale(2) translate(-50%, -50%);
-	z-index: 15;
+	z-index: -10;
 `;
 
 const colorShifter = keyframes`
@@ -39,6 +39,7 @@ const MaskLogo = styled.img`
 	border-radius: 50%;
 	padding: 0;
 	box-shadow: 0 0 80px cyan, 0 0 30px darkcyan, 0 0 6px darkcyan;
+	z-index: 0;
 	&:hover {
 		cursor: pointer;
 		animation: ${colorShifter} 20s infinite;
