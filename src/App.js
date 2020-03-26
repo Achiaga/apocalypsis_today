@@ -4,10 +4,12 @@ import { Drawer } from './components/Drawer';
 import { Main } from './components/Main.js';
 import MainBg from './assets/map.jpg';
 import SecondBg from './assets/maskbg.png';
+import Theme from './containers/Theme';
 
 import styled from 'styled-components';
 
 const AppContainer = styled.div`
+	/* background: ${props => props.theme.colors.black}; */
 	text-align: center;
 	position: sticky;
 	margin: auto;
@@ -37,13 +39,15 @@ const BgMask = styled.img`
 
 function App() {
 	return (
-		<AppContainer>
-			<Drawer />
-			<BgMap src={MainBg} alt='main-background' />
-			<BgMask src={SecondBg} alt='second-background' />
-			<CoverPage />
-			<Main />
-		</AppContainer>
+		<Theme>
+			<AppContainer>
+				<Drawer />
+				<BgMap src={MainBg} alt='main-background' />
+				<BgMask src={SecondBg} alt='second-background' />
+				<CoverPage />
+				<Main />
+			</AppContainer>
+		</Theme>
 	);
 }
 
