@@ -3,6 +3,7 @@ import styled, { keyframes } from 'styled-components';
 import OctopusLogo from './OctopusLogo';
 
 const Navbar = styled.div`
+	background: ${props => props.theme.colors.black};
 	background-color: #171717;
 	position: fixed;
 	left: 0em;

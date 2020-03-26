@@ -4,7 +4,7 @@ import { Drawer } from './components/Drawer';
 import { Main } from './components/Main.js';
 import MainBg from './assets/map.jpg';
 import SecondBg from './assets/maskbg.png';
-import Theme from './containers/Theme';
+import Theme from './style/Theme';
 
 import styled from 'styled-components';
 
