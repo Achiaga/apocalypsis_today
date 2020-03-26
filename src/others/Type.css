@@ -1,10 +1,8 @@
 .css-typing {
-	text-align: center;
-	position: relative;
+	margin-left: 15vw;
+	text-align: left;
 	color: white;
-	margin-top: 4rem;
-	left: 19%;
-	height: 20vh;
+	height: 100%;
 	width: 50vw;
 }
 
@@ -17,6 +15,7 @@
 }
 .css-typing p:nth-child(1) {
 	width: 22em;
+	opacity: 0;
 	-webkit-animation: type 3s steps(40, end);
 	animation: type 3s steps(40, end);
 	-webkit-animation-fill-mode: forwards;
@@ -37,7 +36,7 @@
 .css-typing p:nth-child(3) {
 	width: 21em;
 	opacity: 0;
-	-webkit-animation: type 3s steps(20, end),
+	-webkit-animation: type 3s steps(40, end),
 		blink 0.5s step-end infinite alternate;
 	animation: type 3s steps(40, end);
 	-webkit-animation-delay: 4s;
@@ -48,7 +47,7 @@
 .css-typing p:nth-child(4) {
 	width: 27em;
 	opacity: 0;
-	-webkit-animation: type 3s steps(20, end),
+	-webkit-animation: type 3s steps(40, end),
 		blink 0.5s step-end infinite alternate;
 	animation: type 3s steps(40, end);
 	-webkit-animation-delay: 4s;
@@ -59,7 +58,7 @@
 .css-typing p:nth-child(5) {
 	width: 20em;
 	opacity: 0;
-	-webkit-animation: type 3s steps(20, end),
+	-webkit-animation: type 3s steps(40, end),
 		blink 0.5s step-end infinite alternate;
 	animation: type 3s steps(40, end);
 	-webkit-animation-delay: 4s;
@@ -70,7 +69,7 @@
 .css-typing p:nth-child(6) {
 	width: 31em;
 	opacity: 0;
-	-webkit-animation: type 3s steps(20, end),
+	-webkit-animation: type 3s steps(40, end),
 		blink 0.5s step-end infinite alternate;
 	animation: type 3s steps(40, end);
 	-webkit-animation-delay: 4s;
@@ -81,7 +80,7 @@
 .css-typing p:nth-child(7) {
 	width: 10em;
 	opacity: 0;
-	-webkit-animation: type 3s steps(20, end),
+	-webkit-animation: type 3s steps(40, end),
 		blink 0.5s step-end infinite alternate;
 	animation: type 3s steps(40, end);
 	-webkit-animation-delay: 4s;
@@ -92,7 +91,7 @@
 .css-typing p:nth-child(8) {
 	width: 29em;
 	opacity: 0;
-	-webkit-animation: type 3s steps(20, end),
+	-webkit-animation: type 3s steps(40, end),
 		blink 0.5s step-end infinite alternate;
 	animation: type 3s steps(40, end);
 	-webkit-animation-delay: 4s;
@@ -103,7 +102,7 @@
 .css-typing p:nth-child(9) {
 	width: 35em;
 	opacity: 0;
-	-webkit-animation: type-end 3s steps(20, end),
+	-webkit-animation: type-end 3s steps(40, end),
 		blink 0.5s step-end infinite alternate;
 	animation: type-end 3s steps(40, end), blink 0.5s step-end infinite alternate;
 	-webkit-animation-delay: 4s;

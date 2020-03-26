@@ -3,6 +3,7 @@
 	left: 2%;
 	top: 3%;
 	transition: all 0.2s ease-in-out;
+	z-index: 15;
 }
 
 .time {

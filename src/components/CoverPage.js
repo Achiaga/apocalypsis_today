@@ -1,9 +1,10 @@
 import React from 'react';
-import './CoverPage.css';
+
+import { TittleWrapper } from '../style/CoverPageStyled';
 
 function CoverPage() {
 	return (
-		<div className='tittle'>
+		<TittleWrapper>
 			<span className='A'>A</span>
 			<span>p</span>
 			<span>o</span>
@@ -19,10 +20,10 @@ function CoverPage() {
 			<span className='off'>0</span>
 			<span>d</span>
 			<span>4</span>
-			<div id='hangEdge'>
+			<div class='hangEdge'>
 				<span>Y</span>
 			</div>
-		</div>
+		</TittleWrapper>
 	);
 }
 
